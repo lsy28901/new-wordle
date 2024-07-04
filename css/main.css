@@ -23,3 +23,40 @@ main {
 	height: 60px;
 	font-weight: bold;
 }
+
+@keyframes 정답 {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(2);
+	}
+}
+
+.정답애니메이션 {
+	animation: 정답 2s;
+}
+
+@keyframes 오답 {
+	0% {
+		transform: translateX(10px);
+	}
+	10% {
+		transform: translateX(-10px);
+	}
+	30% {
+		transform: translateX(10px);
+	}
+	50% {
+		transform: translateX(-10px);
+	}
+	70% {
+		transform: translateX(10px);
+	}
+	10% {
+		transform: translateX(-10px);
+	}
+}
+.오답애니메이션 {
+	animation: 오답 0.1s;
+}
