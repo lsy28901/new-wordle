@@ -1,0 +1,36 @@
+/*헤더*/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #d3d6da;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.header-menu img {
+	width: 25px;
+	height: 25px;
+}
+.header-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.header-title {
+	font-weight: bold;
+	font-size: 25px;
+	cursor: pointer;
+}
+.header-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.header-icons__icon img {
+	margin-right: 5px;
+	width: 25px;
+	height: 25px;
+}

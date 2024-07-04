@@ -1,0 +1,40 @@
+/*푸터*/
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.keyboard-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.keyboard-column__custom {
+	width: 70px;
+	height: 50px;
+	border: 1px solid #d3d6da;
+	border-radius: 8px;
+	background-color: #d3d6da;
+	margin-right: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.keyboard-column {
+	width: 40px;
+	height: 50px;
+	border: 1px solid #d3d6da;
+	border-radius: 8px;
+	background-color: #d3d6da;
+	margin-right: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	cursor: pointer;
+}
