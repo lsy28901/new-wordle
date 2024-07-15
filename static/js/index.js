@@ -1,16 +1,9 @@
-const answer = "APPLE";
 
 let attempts = 0; //시도횟수
 let index = 0; //인덱스번호
 let timerId;
 
-
-
 function appStart() {
-
-    //1. 엔터키를 눌렀을때 정답을 확인해서 키보드에 정답표시가 되게 구현하라.
-    //2. 키보드 클릭으로 입력이 가능하도록 구현하라
-    // 팁 : 키보드에 클릭이벤트를 등록하기!
 
     const handleClick = (event) => {
         const keyText = event.target.textContent; //클릭한 키의 텍스트
@@ -81,9 +74,14 @@ function appStart() {
     }
 
     //엔터키를  눌렀을 때
-    const handleEnterKey = () => {
+    const handleEnterKey = async () => {
         let correctCount = 0;
         const row = document.querySelector(`.row${attempts}`);
+
+        //서버에서 정답을 받아오는 코드
+        const response = await fetch('/answer');
+        const answer = await response.json();
+
         if (index === 5) {
             for (let i = 0; i < 5; i++) {
                 const block = document.querySelector(`.board-block[data-index='${attempts}${i}']`);
